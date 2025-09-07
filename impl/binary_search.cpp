@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-int bsearch(int x, vector<int>a){
-	int l = 0; int r = a.size();	
-	while (l < r){
+int binary_search(int x, vector<int>a){
+	int l = 0; int r = a.size() - 1 ;	
+	while (l <= r){
 		int m = (l + r) / 2;
 		if (x == a[m]) return m;
 		else if (x > a[m]) l = m + 1;
@@ -19,6 +19,6 @@ int main(){
 		cin >> a[i];
 	}
 	int x; cin >> x;
-	cout << bsearch(x, a) << endl;
+	cout << binary_search(x, a) << endl;
 	return 0;
 }
