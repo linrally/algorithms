@@ -4,4 +4,6 @@
 !*.h
 !*.testcases
 !.gitignore
+!*.snippets
+!*.sh
 !*.md

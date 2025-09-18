@@ -21,4 +21,3 @@ int main(){
 	cout << isAnagram(s,t) << endl;
 	return 0;
 }
-
