@@ -3,7 +3,7 @@ snippet starter "C++ Starter Program" b
 using namespace std;
 
 int main() {
-	${0:return 0;}
+	return 0;
 }
 endsnippet
 
@@ -37,3 +37,12 @@ for (int i = 0; i < M; i++) {
 }
 endsnippet
 
+snippet sll "Singly Linked List" b
+struct ListNode {
+	int val;
+	ListNode *next;
+	ListNode() : val(0), next(nullptr) {}
+	ListNode(int x) : val(x), next(nullptr) {}
+	ListNode(int x, ListNode *next) : val(x), next(next) {}
+};
+endsnippet
