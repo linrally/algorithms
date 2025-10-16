@@ -27,6 +27,14 @@ for(int i = 0; i<N; i++){
 }
 endsnippet
 
+snippet 2list "Vector of 2-Element Lists"
+int M; cin >> M;
+vector<vector<int>> v(M, vector<int>(2));
+for(int i = 0; i < M; i++){
+	cin >> v[i][0] >> v[i][1];
+}
+endsnippet
+
 snippet 2darray "2D Array" b
 int M, N; cin >> M >> N;
 vector<vector<int>> v(M, vector<int>(N));
