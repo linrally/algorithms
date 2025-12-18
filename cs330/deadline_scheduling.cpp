@@ -13,6 +13,7 @@ bool comp(Job j1, Job j2){
 	return j1.profit > j2.profit;
 }
 
+// greedy - schedule each job at the latest time it can be scheduled, starting with highest profit
 int maxProfit(vector<Job> v){
 	sort(v.begin(), v.end(), comp);	
 	int maxDeadline = 0;
@@ -22,8 +23,8 @@ int maxProfit(vector<Job> v){
 	vector<bool> scheduled(maxDeadline);
 	int profit = 0;
 	for(Job &j:v){
-		int i = j.deadline;
-		while(i >= 0 and scheduled[i]) i--;
+		int i = j.deadline - 1;
+		while(i > 0 and scheduled[i]) i--;
 		if(scheduled[i]) continue; // no space
 		scheduled[i] = true;
 		profit += j.profit;
