@@ -7,4 +7,4 @@
 - [ ] Kadane's Algorithm (Maximum Subarray Sum)
 - [ ] Line Sweep
 - [ ] Fenwick (BIT)
-
+- [ ] Clean up gitignore (ignore .obj files instead of everything)
