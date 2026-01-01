@@ -8,7 +8,7 @@ void cyclic_sort(vector<T> &v){
 	int n = v.size();
 	int i = 0;
 	while(i < n){
-		if(v[v[i] - 1] != v[i]){
+		if(v[v[i] - 1] != v[i]){ // place element v[i] in position v[i] - 1
 			swap(v[i], v[v[i] - 1]);
 		} else {
 			i++;
