@@ -9,7 +9,7 @@ vector<Floor> FCFS(vector<Floor> requests, Floor cur) {
 }
 
 // Shortest Seek Time First (SSTF)
-// More optimal for total time, but may result in starvation
+// May result in starvation
 vector<Floor> SSTF(vector<Floor> requests, Floor cur){
 	vector<Floor> stops;
 	vector<Floor> remaining = requests;
